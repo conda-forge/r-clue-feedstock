@@ -1,4 +1,4 @@
-{% set version = "0.3-56" %}
+{% set version = "0.3-57" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/clue_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/clue/clue_{{ version }}.tar.gz
-  sha256: e9f59f4266fa721ed9df6847ae267cb094120a436c6f0182d03bc2ada87a87bd
+  sha256: 6e369d07b464a9624209a06b5078bf988f01f7963076e946649d76aea0622d17
 
 build:
   merge_build_host: True  # [win]
