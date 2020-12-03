@@ -1,4 +1,4 @@
-{% set version = "0.3-57" %}
+{% set version = "0.3-58" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/clue_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/clue/clue_{{ version }}.tar.gz
-  sha256: 6e369d07b464a9624209a06b5078bf988f01f7963076e946649d76aea0622d17
+  sha256: 2ab6662eaa1103a7b633477e8ebd266b262ed54fac6f9326b160067a2ded9ce7
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   skip: true  # [win32]
 
   rpaths:
@@ -46,7 +46,7 @@ about:
   license: GPL-2
   summary: CLUster Ensembles.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
