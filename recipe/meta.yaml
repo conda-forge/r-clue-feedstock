@@ -1,4 +1,4 @@
-{% set version = "0.3-67" %}
+{% set version = "0.3-68" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/clue_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/clue/clue_{{ version }}.tar.gz
-  sha256: 9bb0c9fee0efa4f87b767f5a8bcf1239274bc21d0bc245d6174265e025528362
+  sha256: 66841e71db41197000ef443d88cbb6da6c0b9c825903cb7b0db44537838a3216
 
 build:
   number: 0
